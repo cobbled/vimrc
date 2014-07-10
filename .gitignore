@@ -1,0 +1,7 @@
+*~
+.VimballRecord
+.netrwhist
+autoload
+bundle
+doc
+plugin
