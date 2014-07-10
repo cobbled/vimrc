@@ -1,27 +1,27 @@
 "+-------------------+----------------------------------------------------+
-"| vim-pathogen      | https://github.com/tpope/vim-pathogen              |
-"| drawit            | see README.md                                      |
-"| neocomplete       | https://github.com/Shougo/neocomplete.vim          |
-"| clang_complete    | https://github.com/Rip-Rip/clang_complete          |
-"| airline           | https://github.com/bling/vim-airline               |
-"| unisnips          | https://github.com/SirVer/ultisnips                |
-"| vim-snippets      | https://github.com/cobbled/vim-snippets            |
-"| tagbar            | https://github.com/majutsushi/tagbar               |
-"| color sample pack | https://github.com/vim-scripts/Colour-Sampler-Pack |
+"| auto-pairs        | https://github.com/jiangmiao/auto-pairs            |
 "| BufExplorer       | https://github.com/jlanzarotta/bufexplorer         |
+"| clang_complete    | https://github.com/Rip-Rip/clang_complete          |
+"| color sample pack | https://github.com/vim-scripts/Colour-Sampler-Pack |
+"| drawit            | https://github.com/vim-scripts/DrawIt              |
+"| neocomplete       | https://github.com/Shougo/neocomplete.vim          |
 "| syntastic         | https://github.com/scrooloose/syntastic            |
-"| vim-javascript    | https://github.com/pangloss/vim-javascript         |
+"| tagbar            | https://github.com/majutsushi/tagbar               |
+"| unisnips          | https://github.com/SirVer/ultisnips                |
+"| vim-airline       | https://github.com/bling/vim-airline               |
 "| vim-coffee-script | https://github.com/kchmck/vim-coffee-script        |
-"| vim-auto-pairs    | https://github.com/jiangmiao/auto-pairs            |
+"| vim-javascript    | https://github.com/pangloss/vim-javascript         |
+"| vim-snippets      | https://github.com/cobbled/vim-snippets            |
 "+-------------------+----------------------------------------------------+
 "
 "+------------------------------------------------------------------------+
 "| Alternatives for code completion                                       |
 "+-------------------+----------------------------------------------------+
-"| neocomplcache     | https://github.com/Shougo/neocomplcache.vim        |
-"| YouCompleteMe     | https://github.com/Valloric/YouCompleteMe          |
-"| python-mode       | https://github.com/klen/python-mode                |
+"| neocomplcache                                                          |
+"| YouCompleteMe                                                          |
+"| python-mode                                                            |
 "+-------------------+----------------------------------------------------+
+
 
 
 "" Download latest vim builds at
