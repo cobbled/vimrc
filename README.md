@@ -1,8 +1,9 @@
-# VIMRC
+# vimrc
 
 ## Install Pathogen
 
     mkdir -p ~/.vim/{autoload,bundle}
+    wget https://tpo.pe/pathogen.vim -O ~/.vim/autoload/pathogen.vim
 
 ## Insall Drawit
 
