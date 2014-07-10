@@ -20,17 +20,25 @@ function clone
 
     if [ -e $filename ]
     then
-        read -p "$filename exists, delete it? [Y/n] " delete
-        if [[ $delete == "n" ]]
+        read -p "$filename exists, upadte it? [Y/d/q] " action
+        if [[ $action == "q" ]]
         then
             echo skip $filename
             return
+        elif [[ $action == "d" ]]
+        then
+            echo delete $filename
+            rm -rf $filename
+            git clone --depth=1 $url
+        else
+            cd $filename
+            git pull
+            cd ..
         fi
+    else
+        git clone --depth=1 $url
     fi
 
-    echo delete $filename
-    rm -rf $filename
-    git clone --depth=1 $url
 }
 
 urls=$(awk -F'|' '{print $3}' < vimrc)
@@ -45,4 +53,4 @@ do
     fi
 done
 
-cd -
+cd ..
