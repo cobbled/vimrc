@@ -6,6 +6,26 @@ mkdir -p ~/.vim/{autoload,bundle}
 #wget https://tpo.pe/pathogen.vim -O ~/.vim/autoload/pathogen.vim
 
 
+# install gtags
+function install_gtags
+{
+    GTAT='/usr/local/share/gtags/gtags.vim'
+    if [ -r $GTAT ]
+    then
+        read -p 'gtags.vim found, copy it into plugin? [Y/n] ' action
+        if [[ $action == "n" ]]
+        then
+            echo skip gtags
+            return
+        fi
+        echo use gtags
+        mkdir -p ~/.vim/plugin
+        cp $GTAT ~/.vim/plugin/
+    fi
+}
+
+install_gtags
+
 # download plugins
 function clone
 {
@@ -18,7 +38,7 @@ function clone
     echo 
     echo clone $filename
 
-    if [ -e $filename ]
+    if [ -e $filename ] && [ -d ~/.vim/bundle/$filename/.git ]
     then
         read -p "$filename exists, upadte it? [Y/d/q] " action
         if [[ $action == "q" ]]
