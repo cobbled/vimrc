@@ -81,9 +81,37 @@ if has("autocmd")
     au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
 
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""
+"" functions
+""""""""""""""""""""""""""""""""""""""""""""""""""
+
+function s:swap_search_cases ()
+    if &ignorecase == 0
+        let &ignorecase = 1
+    elseif &ignorecase == 1
+        let &ignorecase = 0
+    endif
+endfunction
+
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""
+"" commands
+""""""""""""""""""""""""""""""""""""""""""""""""""
+
+command! -nargs=0 -bar SwapSearchCases
+            \ call s:swap_search_cases()
+
+
+
 """"""""""""""""""""""""""""""""""""""""""""""""""
 "" key binding
 """"""""""""""""""""""""""""""""""""""""""""""""""
+
+"" call s:swap_search_cases
+nnoremap <LEADER>ssc<RETURN> :SwapSearchCases<RETURN>
 
 "" for tabs
 cnoremap <C-N> tabnew<SPACE>

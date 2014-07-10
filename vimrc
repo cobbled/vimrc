@@ -44,6 +44,7 @@ execute 'source 'vimrcs . 'basic.vim'
 execute 'source 'vimrcs . 'bufexplorer.vim'
 execute 'source 'vimrcs . 'tagbar.vim'
 execute 'source 'vimrcs . 'ultisnips.vim'
+execute 'source 'vimrcs . 'gtags.vim'
 
 if isdirectory(bundle . 'neocomplete.vim')
     execute 'source 'vimrcs . 'neocomplete.vim'
