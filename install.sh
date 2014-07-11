@@ -3,7 +3,7 @@
 
 # install pathogen
 mkdir -p ~/.vim/{autoload,bundle}
-#wget https://tpo.pe/pathogen.vim -O ~/.vim/autoload/pathogen.vim
+wget https://tpo.pe/pathogen.vim -O ~/.vim/autoload/pathogen.vim
 
 
 # install gtags
