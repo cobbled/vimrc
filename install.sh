@@ -1,5 +1,6 @@
 #!/bin/bash
 
+cp vrapperrc ~/.vrapperrc
 
 # install pathogen
 mkdir -p ~/.vim/{autoload,bundle}

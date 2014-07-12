@@ -11,6 +11,7 @@
 "| vim-airline       | https://github.com/bling/vim-airline               |
 "| vim-coffee-script | https://github.com/kchmck/vim-coffee-script        |
 "| vim-javascript    | https://github.com/pangloss/vim-javascript         |
+"| vim-node          | https://github.com/moll/vim-node                   |
 "| vim-snippets      | https://github.com/cobbled/vim-snippets            |
 "+-------------------+----------------------------------------------------+
 "
