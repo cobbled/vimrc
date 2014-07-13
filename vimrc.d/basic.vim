@@ -43,7 +43,7 @@ set t_Co=256
 
 autocmd FileType javascript setlocal shiftwidth=2 tabstop=2 expandtab
 autocmd FileType coffee setlocal shiftwidth=2 tabstop=2 expandtab
-autocmd FileType python setlocal shiftwidth=4 tabstop=4 noexpandtab
+autocmd FileType python setlocal shiftwidth=4 tabstop=4 expandtab
 
 set history=1000
 "set mouse=a		" mouse support
