@@ -14,10 +14,10 @@ let g:clang_complete_auto = 0
 let g:clang_auto_select = 0
 "let g:clang_use_library = 1
 
-let llvm33 = '/usr/lib/llvm-3.3/lib'
-let llvm34 = '/usr/lib/llvm-3.4/lib'
-if isdirectory(llvm34)
-    let g:clang_library_path = llvm33
-elseif isdirectory(llvm33)
+let llvm33 = '/usr/lib/llvm-3.3/lib/libllvm.a'
+let llvm34 = '/usr/lib/llvm-3.4/lib/libllvm.a'
+if filereadable(llvm34)
     let g:clang_library_path = llvm34
+elseif filereadable(llvm33)
+    let g:clang_library_path = llvm33
 endif

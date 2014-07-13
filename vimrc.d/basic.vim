@@ -111,15 +111,12 @@ command! -nargs=0 -bar SwapSearchCases
 """"""""""""""""""""""""""""""""""""""""""""""""""
 
 "" call s:swap_search_cases
-nnoremap <LEADER>ssc<RETURN> :SwapSearchCases<RETURN>
+nnoremap <LEADER>ssc :SwapSearchCases<RETURN>
 
 "" for tabs
 cnoremap <C-N> tabnew<SPACE>
 nnoremap <C-N> gt
 nnoremap <C-P> gT
-
-"" create ctags
-nnoremap <silent> <LEADER>ct<RETURN> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 
 "" execute commands
 nnoremap <C-C> :

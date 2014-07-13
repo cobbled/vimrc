@@ -1,3 +1,2 @@
 "" gtags
-nnoremap <LEADER>gt<RETURN> :Gtags<Space>
-
+nnoremap <LEADER>gt :Gtags<Space>

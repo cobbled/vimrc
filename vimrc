@@ -1,27 +1,34 @@
-"+-------------------+----------------------------------------------------+
-"| auto-pairs        | https://github.com/jiangmiao/auto-pairs            |
-"| BufExplorer       | https://github.com/jlanzarotta/bufexplorer         |
-"| clang_complete    | https://github.com/Rip-Rip/clang_complete          |
-"| color sample pack | https://github.com/vim-scripts/Colour-Sampler-Pack |
-"| drawit            | https://github.com/vim-scripts/DrawIt              |
-"| neocomplete       | https://github.com/Shougo/neocomplete.vim          |
-"| syntastic         | https://github.com/scrooloose/syntastic            |
-"| tagbar            | https://github.com/majutsushi/tagbar               |
-"| unisnips          | https://github.com/SirVer/ultisnips                |
-"| vim-airline       | https://github.com/bling/vim-airline               |
-"| vim-coffee-script | https://github.com/kchmck/vim-coffee-script        |
-"| vim-javascript    | https://github.com/pangloss/vim-javascript         |
-"| vim-node          | https://github.com/moll/vim-node                   |
-"| vim-snippets      | https://github.com/cobbled/vim-snippets            |
-"+-------------------+----------------------------------------------------+
+"+-----------------------+------------------------------------------------------+
+"| ack.vim               | https://github.com/mileszs/ack.vim                   |
+"| BufExplorer           | https://github.com/jlanzarotta/bufexplorer           |
+"| clang_complete        | https://github.com/Rip-Rip/clang_complete            |
+"| color sample pack     | https://github.com/vim-scripts/Colour-Sampler-Pack   |
+"| ctrlp.vim             | https://github.com/kien/ctrlp.vim                    |
+"| delimitMate           | https://github.com/Raimondi/delimitMate              |
+"| drawit                | https://github.com/vim-scripts/DrawIt                |
+"| neocomplete           | https://github.com/Shougo/neocomplete.vim            |
+"| nerdtree              | https://github.com/scrooloose/nerdtree               |
+"| syntastic             | https://github.com/scrooloose/syntastic              |
+"| tagbar                | https://github.com/majutsushi/tagbar                 |
+"| unisnips              | https://github.com/SirVer/ultisnips                  |
+"| vim-airline           | https://github.com/bling/vim-airline                 |
+"| vim-coffee-script     | https://github.com/kchmck/vim-coffee-script          |
+"| vim-colors-solarized  | https://github.com/altercation/vim-colors-solarized  |
+"| vim-easymotion        | https://github.com/Lokaltog/vim-easymotion           |
+"| vim-fugitive          | https://github.com/tpope/vim-fugitive                |
+"| vim-javascript        | https://github.com/pangloss/vim-javascript           |
+"| vim-node              | https://github.com/moll/vim-node                     |
+"| vim-snippets          | https://github.com/cobbled/vim-snippets              |
+"| vim-surround          | https://github.com/tpope/vim-surround                |
+"+-----------------------+------------------------------------------------------+
 "
-"+------------------------------------------------------------------------+
-"| Alternatives for code completion                                       |
-"+-------------------+----------------------------------------------------+
-"| neocomplcache                                                          |
-"| YouCompleteMe                                                          |
-"| python-mode                                                            |
-"+-------------------+----------------------------------------------------+
+"+------------------------------------------------------------------------------+
+"| Alternatives for code completion                                             |
+"+------------------------------------------------------------------------------+
+"| neocomplcache                                                                |
+"| YouCompleteMe                                                                |
+"| python-mode                                                                  |
+"+------------------------------------------------------------------------------+
 
 
 

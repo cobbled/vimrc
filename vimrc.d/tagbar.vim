@@ -1,4 +1,4 @@
 "" tagbar
-nnoremap <LEADER>tb<RETURN> :Tagbar<RETURN>
+nnoremap <LEADER>tb :Tagbar<RETURN>
 
 
