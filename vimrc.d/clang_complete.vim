@@ -14,6 +14,9 @@ let g:clang_complete_auto = 0
 let g:clang_auto_select = 0
 "let g:clang_use_library = 1
 
+" delete tab key mapping
+let g:clang_make_default_keymappings = 0
+
 let llvm33 = '/usr/lib/llvm-3.3/lib/'
 let llvm34 = '/usr/lib/llvm-3.4/lib/'
 if filereadable(llvm34 . '/libclang.so')

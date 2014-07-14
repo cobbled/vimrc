@@ -53,6 +53,7 @@ execute 'source 'vimrcs . 'bufexplorer.vim'
 execute 'source 'vimrcs . 'tagbar.vim'
 execute 'source 'vimrcs . 'ultisnips.vim'
 execute 'source 'vimrcs . 'gtags.vim'
+execute 'source 'vimrcs . 'delimitmate.vim'
 
 if isdirectory(bundle . 'neocomplete.vim')
     execute 'source 'vimrcs . 'neocomplete.vim'
