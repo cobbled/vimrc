@@ -62,7 +62,7 @@ function clone
 
 }
 
-urls=$(awk -F'|' '{print $3}' < vimrc)
+urls=$(sed -n '/^" .* | https/p' | awk -F'|' '{print $2}' < vimrc)
 
 cd bundle
 
