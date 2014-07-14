@@ -45,6 +45,9 @@ autocmd FileType javascript setlocal shiftwidth=2 tabstop=2 expandtab
 autocmd FileType coffee setlocal shiftwidth=2 tabstop=2 expandtab
 autocmd FileType python setlocal shiftwidth=4 tabstop=4 expandtab
 
+" set filetype to markdown when edit .md file
+autocmd BufNewFile,BufRead *.md set filetype=markdown
+
 set history=1000
 "set mouse=a		" mouse support
 set laststatus=2	" always show the status line
