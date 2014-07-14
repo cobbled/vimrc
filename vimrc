@@ -18,7 +18,6 @@
 " vim-fugitive          | https://github.com/tpope/vim-fugitive
 " vim-javascript        | https://github.com/pangloss/vim-javascript
 " vim-node              | https://github.com/moll/vim-node
-" vim-pandoc-syntax     | https://github.com/vim-pandoc/vim-pandoc-syntax
 " vim-snippets          | https://github.com/cobbled/vim-snippets
 " vim-surround          | https://github.com/tpope/vim-surround
 
