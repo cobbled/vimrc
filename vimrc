@@ -37,24 +37,24 @@ call pathogen#infect()
 """"""""""""""""""""""""""""""""""""""""""""""""""
 "" plugin setting
 """"""""""""""""""""""""""""""""""""""""""""""""""
-let home = expand('~')
-let vimrcs = home . '/.vim/vimrc.d/'
-let bundle = home . '/.vim/bundle/'
+let s:home = expand('~')
+let s:vimrcs = s:home . '/.vim/vimrc.d/'
+let s:bundle = s:home . '/.vim/bundle/'
 
-execute 'source 'vimrcs . 'basic.vim'
+execute 'source 's:vimrcs . 'basic.vim'
 
-execute 'source 'vimrcs . 'bufexplorer.vim'
-execute 'source 'vimrcs . 'tagbar.vim'
-execute 'source 'vimrcs . 'ultisnips.vim'
-execute 'source 'vimrcs . 'gtags.vim'
-execute 'source 'vimrcs . 'delimitmate.vim'
+execute 'source 's:vimrcs . 'bufexplorer.vim'
+execute 'source 's:vimrcs . 'tagbar.vim'
+execute 'source 's:vimrcs . 'ultisnips.vim'
+execute 'source 's:vimrcs . 'gtags.vim'
+execute 'source 's:vimrcs . 'delimitmate.vim'
 
-if isdirectory(bundle . 'neocomplete.vim')
-    execute 'source 'vimrcs . 'neocomplete.vim'
-elseif isdirectory(bundle . 'YouCompleteMe')
+if isdirectory(s:bundle . 'neocomplete.vim')
+    execute 'source 's:vimrcs . 'neocomplete.vim'
+elseif isdirectory(s:bundle . 'YouCompleteMe')
     " TODO youcompleteme.vim
-    " execute 'source 'vimrcs . 'youcompleteme.vim'
+    " execute 'source 's:vimrcs . 'youcompleteme.vim'
 elseif isdirectory(bundle . 'neocomplcache.vim')
-    execute 'source 'vimrcs . 'neocomplcache.vim'
+    execute 'source 's:vimrcs . 'neocomplcache.vim'
 endif
 
