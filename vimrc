@@ -51,9 +51,6 @@ execute 'source 'vimrcs . 'delimitmate.vim'
 
 if isdirectory(bundle . 'neocomplete.vim')
     execute 'source 'vimrcs . 'neocomplete.vim'
-    if isdirectory(bundle . 'clang_complete')
-        execute 'source 'vimrcs . 'clang_complete.vim'
-    endif
 elseif isdirectory(bundle . 'YouCompleteMe')
     " TODO youcompleteme.vim
     " execute 'source 'vimrcs . 'youcompleteme.vim'
