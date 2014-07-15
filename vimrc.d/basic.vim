@@ -119,7 +119,24 @@ nnoremap <LEADER>ssc :SwapSearchCases<RETURN>
 "" for tabs
 cnoremap <C-N> tabnew<SPACE>
 nnoremap <C-N> gt
-nnoremap <C-P> gT
+" <C-P> is used by plugin ctrlp
+" nnoremap <C-P> gT
+nnoremap <LEADER>t<Return> :tabnext<SPACE>
+nnoremap <LEADER>tm        :tabmove<SPACE>
+nnoremap <LEADER>tn        :tabnext<Return>
+nnoremap <LEADER>tp        :tabprevious<Return>
+nnoremap <LEADER>tf        :tabfirst<Return>
+nnoremap <LEADER>tl        :tablast<Return>
+nnoremap <LEADER>t1        :tabnext 1<Return>
+nnoremap <LEADER>t2        :tabnext 2<Return>
+nnoremap <LEADER>t3        :tabnext 3<Return>
+nnoremap <LEADER>t4        :tabnext 4<Return>
+nnoremap <LEADER>t5        :tabnext 5<Return>
+nnoremap <LEADER>t6        :tabnext 6<Return>
+nnoremap <LEADER>t7        :tabnext 7<Return>
+nnoremap <LEADER>t8        :tabnext 8<Return>
+nnoremap <LEADER>t9        :tabnext 9<Return>
+nnoremap <LEADER>t0        :tabs<Return>
 
 "" execute commands
 nnoremap <C-C> :
