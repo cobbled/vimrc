@@ -20,6 +20,7 @@
 " vim-node              | https://github.com/moll/vim-node
 " vim-snippets          | https://github.com/cobbled/vim-snippets
 " vim-surround          | https://github.com/tpope/vim-surround
+" vimproc.vim           | https://github.com/Shougo/vimproc.vim
 
 
 

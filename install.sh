@@ -31,15 +31,9 @@ install_gtags
 function clone
 {
     url=$1
+    filename=$2
 
-    # filename=$(echo $url | ark -F'/' '{print $NF}')
-    # {print $NF} may not work when url has a trailing '/' character
-    filename=$(echo $url | awk -F"github.com/" '{print $2}' | awk -F'/' '{print $2}')
-
-    echo 
-    echo clone $filename
-
-    if [ -e $filename ] && [ -d ~/.vim/bundle/$filename/.git ]
+    if [ -e $filename ] && [ -d $filename/.git ]
     then
         read -p "$filename exists, upadte it? [Y/d/q] " action
         if [[ $action == "q" ]]
@@ -59,10 +53,9 @@ function clone
     else
         git clone --depth=1 $url
     fi
-
 }
 
-urls=$(sed -n '/^" .* | https/p' | awk -F'|' '{print $2}' < vimrc)
+urls=$(sed -n '/^" .* | https/p' vimrc | awk -F'|' '{print $2}')
 
 cd bundle
 
@@ -70,7 +63,24 @@ for url in $urls
 do
     if [[ $url == 'https://github.com/'* ]]
     then
-        clone $url
+        # filename=$(echo $url | ark -F'/' '{print $NF}')
+        # {print $NF} may not work when url has a trailing '/' character
+        filename=$(echo $url | awk -F"github.com/" '{print $2}' | awk -F'/' '{print $2}')
+
+        echo 
+        echo clone $filename
+
+        clone $url $filename
+
+        if [[ $filename == 'vimproc.vim' ]]
+        then
+            # compile vimproc
+            echo 
+            echo compile vimproc
+            cd vimproc.vim
+            make
+            cd ..
+        fi
     fi
 done
 
