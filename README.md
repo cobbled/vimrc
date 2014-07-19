@@ -2,16 +2,23 @@
 
     cd ~
     git clone https://github.com/cobbled/vimrc .vim
-    ln -s .vim/vimrc .vimrc
     cd .vim
     ./install.sh
 
-## Install Pathogen Manually
+## Install libclang (necessary if you want to use clang_complete)
+
+    aptitude install libclang-3.4-dev
+
+## Install ack-grep (recommended)
+
+    aptitude install ack-grep
+
+## Install Pathogen Manually (not recommended)
 
     mkdir -p ~/.vim/{autoload,bundle}
     wget https://tpo.pe/pathogen.vim -O ~/.vim/autoload/pathogen.vim
 
-## Insall Drawit Manually
+## Insall Drawit Manually (not recommended)
 
 Download DrawIt at: [Download Link](http://www.vim.org/scripts/script.php?script_id=40)
 
