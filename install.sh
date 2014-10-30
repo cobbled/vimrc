@@ -4,7 +4,7 @@ cp vrapperrc ~/.vrapperrc
 
 # install pathogen
 mkdir -p ~/.vim/{autoload,bundle}
-wget https://tpo.pe/pathogen.vim -O ~/.vim/autoload/pathogen.vim
+wget https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim -O ~/.vim/autoload/pathogen.vim
 
 
 # install gtags
