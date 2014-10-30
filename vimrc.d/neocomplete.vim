@@ -26,12 +26,8 @@ if isdirectory(s:clang_complete_path)
     " delete tab key mapping
     let g:clang_make_default_keymappings = 0
 
-    let s:llvm33 = '/usr/lib/llvm-3.3/lib/'
-    let s:llvm34 = '/usr/lib/llvm-3.4/lib/'
-    if filereadable(s:llvm34 . '/libclang.so')
-        let g:clang_library_path = s:llvm34
-    elseif filereadable(s:llvm33 . '/libclang.so')
-        let g:clang_library_path = s:llvm33
-    else
+    let s:libclang = glob("`find /usr/lib -name libclang.so`")
+    if filereadable(s:libclang)
+        let g:clang_library_path = s:libclang
     endif
 endif
