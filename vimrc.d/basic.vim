@@ -145,6 +145,7 @@ cnoremap <C-C> !
 " include path
 set path+=/usr/include
 set path+=/usr/local/include
+set path+=/usr/include/x86_64-linux-gnu/
 set tags+=/usr/include/tags
 
 
