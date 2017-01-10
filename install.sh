@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cp vrapperrc ~/.vrapperrc
+# cp vrapperrc ~/.vrapperrc
 
 # install pathogen
 mkdir -p ~/.vim/{autoload,bundle}
@@ -55,20 +55,20 @@ do
         # {print $NF} may not work when url has a trailing '/' character
         filename=$(echo $url | awk -F"github.com/" '{print $2}' | awk -F'/' '{print $2}')
 
-        echo 
+        echo
         echo clone $filename
 
         clone $url $filename
 
-        if [[ $filename == 'vimproc.vim' ]]
-        then
-            # compile vimproc
-            echo 
-            echo compile vimproc
-            cd vimproc.vim
-            make
-            cd ..
-        fi
+        # if [[ $filename == 'vimproc.vim' ]]
+        # then
+        #     # compile vimproc
+        #     echo
+        #     echo compile vimproc
+        #     cd vimproc.vim
+        #     make
+        #     cd ..
+        # fi
     fi
 done
 
